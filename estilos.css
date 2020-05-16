@@ -1,0 +1,362 @@
+@font-face {
+    font-family: Open Sans;
+    src: url(fonts/OpenSans-Regular.enc);
+}
+
+* {
+    padding:0;
+    margin:0;
+    font-family: Open Sans, arial;
+}   
+
+a:-webkit-any-link {    
+    cursor: pointer;
+}   
+body{ 
+    background-color: #1d1d1d; 
+	color: #fff;
+	padding: 0;
+}
+
+.formulario_buscar {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+h1{
+    padding: 10px 0;
+}  
+.buscar:focus,
+.ordenar select:focus{
+    outline: none;
+} 
+option:focus{
+    outline: none;
+}
+.listado, p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.ordenar{
+    display: inline-block;
+    width: 130px;
+    margin-right: 20px;
+    float: left;
+    
+}
+.ordenar select{
+    margin: 0;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    width: 100px;
+    padding-left: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    height: 23px;
+    color: black;
+    font-size: .9em;
+    font-weight: 400;
+    overflow: hidden;
+    background: no-repeat 115px 12px #fff;
+    border: 0;
+    
+ }
+.ordenar-contenido{
+    display: flex;
+
+}
+.button {
+    background: #b31217; 
+    border-radius: 3px;
+    border:none;
+    margin-left: 2px;
+    font-weight: 900px;
+    color: #fff;
+    top: 35px;
+    cursor: pointer;
+    width: 90px;
+    padding: 1px 0;
+    
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.header {
+    width: 100%;
+    font-size: 16px;
+    background: black;
+}
+
+.header li {
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    width: 90%;
+    max-width: 830px;
+    margin:auto;
+}
+
+.movie {
+    background:#0e0e0eb0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex
+}
+ .titulo, .calificacion{
+      margin-top:10px;
+      margin-bottom: 3px;
+    }
+.titulo-movie{
+    font-weight: 700;
+    color: #b31217;
+
+}    
+.titulo-movie:hover {
+    color: #919191;
+}
+.fecha {
+    margin-bottom: 7px;
+} 
+.fecha, .sinopsis, .calificacion{
+    color: #919191;
+}   
+.foto img {
+    width: 130px;
+    height: 200px;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.foto-link img {
+    border: 2px solid #6c6f6c;
+}
+.foto-link img:hover {
+    border: 2px solid #b31217;
+}
+
+a {
+    text-decoration:none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div {
+    display: block;
+}
+ul {
+    list-style: none; 
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    text-align: center;
+}
+.buscar {
+  width: 350px;
+  font-size: .85em;
+  font-weight: 700;
+  color: #919191;
+  border: 2px solid #333;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  padding: 4px 30px;
+  background: #1d1d1d;
+}
+.nav li a {
+    text-decoration: none;
+    color:white;
+}
+
+.nav li {
+    color: white;
+    padding: 15px;
+}
+
+.paginacion {
+    margin-bottom: 10px;
+}
+
+.paginacion ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.paginacion ul li {
+    padding: 10px 20px; 
+    color: #fff;
+    background:#b31217;
+    margin-right: 10px;
+}
+
+.paginacion ul li:hover{
+    background:#771504;
+}
+
+.paginacion ul li.actual, .paginacion ul li.disabled {
+    background: #771504;
+}
+
+.paginacion ul li.disabled:hover {
+    cursor: not-allowed;
+}
+
+.main {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.imagen-pelicula img {
+    border: 5px solid white;
+    border-radius: 5px;
+    width: 230px;
+    height: 345px;
+
+}
+.imagen-pelicula {
+    margin-right: 15px;
+}
+.sinopsis-pelicula {
+    color: #919191;
+    margin-top: 10px;
+}
+.comentar {
+    width: 100%;
+    background: #171717;
+    border: none;
+    resize: none;
+    height: 80px;
+    color: #919191;
+    padding: 10px;
+    font-size: 18px;
+}
+textarea:focus {
+    outline: none;
+}
+.boton-comentar {
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background: #b31217;
+}
+.boton-comentar:hover {
+    cursor: pointer;
+    background: #771504;
+}
+.titulo-pelicula {
+    color: #b31217;
+}
+.lista-comentrios{
+    margin-top: 10px;
+}
+.titulo-comentarios{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.lista-comentarios {
+    margin-top: 10px;
+    color: #919191;
+}
+.nombre-usuario{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding-bottom: 10px;
+}
+.comentario p {
+    color: #fff;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.fecha-comentario{
+    margin-top: 7px;
+    color: #fff;
+}
+.comentario {
+    background: #171717;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+.comentario-destacado {
+    background: darkred;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+.puntuacion{
+    color: #fff;
+}
+.container-formulario {
+    width: 400px;
+    padding: 20px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 3px grey;
+    border-radius: 5px;
+}
+.container-formulario h1 {
+    color: #b31217;
+}
+.erroresphp {
+    color: red;
+    width: 400px;
+    padding: 10px 0;
+    background: pink;
+    margin: auto;
+    border: 1px solid red;
+    border-radius: 2px;
+    text-align: center;
+    
+}
+.exito {
+    color: darkgreen;
+    width: 400px;
+    background: lightgreen;
+    padding: 10px 0;
+    text-align: center;
+    margin: auto;
+    border: 1px solid green;
+    border-radius: 2px;
+}
+
+.input input {
+    border: 0;
+    color: #a2a2a2;
+    border-radius: 3px;
+    padding: 10px;
+    background: #282828;
+    margin-bottom: 10px;
+}
+.input input[type="submit"]{
+    background:#b31217;
+    color:white;
+}
+.input input[type="submit"]:hover {
+    background: #771504;
+    cursor: pointer;
+}
+.container-formulario input:focus {
+    outline: none; 
+}
